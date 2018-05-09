@@ -1,8 +1,6 @@
 # FortniteApi
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/fortnite_api`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+fortnite_api allow you to retrieve information from fortnite in an easy way through fortnitetracker.com API.
 
 ## Installation
 
@@ -22,7 +20,41 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Initialize the API with your fortnitetracker.com API key:
+```ruby
+fortnite = FortniteApi::Api.new('Enter your API Key here')
+```
+
+Enter the player's profile and the platform which you want to retrieve the information (for the platform you have the choice between 'pc' for PC, 'xbl' for Xbox and 'psn' for Playstation):
+```ruby
+player = fortnite.get_json('pc','Ninja')
+```
+
+Now you have a player object with you can:
+Return the username as a string:
+```ruby
+player.epicuserhandle
+```
+
+Return the platform as a string:
+```ruby
+player.platformnamelong
+```
+
+Return the stats as a hash (TODO):
+```ruby
+player.stats
+```
+
+Return the username as an array (TODO):
+```ruby
+player.lifetimestats
+```
+
+Return the username as an array (TODO):
+```ruby
+player.recentmatches
+```
 
 ## Development
 
