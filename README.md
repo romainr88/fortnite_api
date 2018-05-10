@@ -1,6 +1,6 @@
 # FortniteApi
 
-fortnite_api allow you to retrieve information from fortnite in an easy way through fortnitetracker.com API.
+fortnite_api allow you to retrieve information from Fortnite in an easy way through fortnitetracker.com API.
 
 ## Installation
 
@@ -20,7 +20,7 @@ Or install it yourself as:
 
 ## Usage
 
-Initialize the API with your fortnitetracker.com API key:
+Initialize the API with your fortnitetracker.com API key's:
 ```ruby
 fortnite = FortniteApi::Api.new('Enter your API Key here')
 ```
@@ -30,30 +30,42 @@ Enter the player's profile and the platform which you want to retrieve the infor
 player = fortnite.get_json('pc','Ninja')
 ```
 
-Now you have a player object with you can:
-Return the username as a string:
+Now you have a player object with the following information:
+
+**Return the username:**
 ```ruby
-player.epicuserhandle
+player.epicuserhandle # return the username as a string
+=> "Ninja"
 ```
 
-Return the platform as a string:
+**Return the platform:**
 ```ruby
-player.platformnamelong
+player.platformnamelong # return the platform as a string
+=> "PC"
 ```
 
-Return the stats as a hash (TODO):
+**Return the stats (solo, duo and squad stats):**
 ```ruby
-player.stats
+player.stats # return the stats as a hash
+=> {"p2"=>{"trnRating"=>{"label"=>"TRN Rating", "field"=>"TRNRating", "category"=>"Rating", "valueInt"=>4543, "value"=>"4543", "rank"=>2080,..., "value"=>"392.45", "percentile"=>0.6, "displayValue"=>"392.45"}}}
 ```
 
-Return the username as an array (TODO):
+**Return the lifetime stats:**
 ```ruby
-player.lifetimestats
+player.lifetimestats # return the lifetime stats as an array
+=> [{"key"=>"Top 3", "value"=>"1518"}, {"key"=>"Top 5s", "value"=>"1318"}, {"key"=>"Top 3s", "value"=>"387"}, {"key"=>"Top 6s", "value"=>"477"},..., "value"=>"54518"}, {"key"=>"K/d", "value"=>"11.05"}]
 ```
 
-Return the username as an array (TODO):
+**Return the recent matches:**
 ```ruby
-player.recentmatches
+player.recentmatches # return the recent matches as an array
+=> [{"id"=>210645397, "accountId"=>"4735ce91-3292-4caf-8a5b-17789b40f79c", "playlist"=>"p10", "kills"=>10, "minutesPlayed"=>0, "top1"=>1, "top5"=>1,...,  "trnRating"=>4472.8, "trnRatingChange"=>-12.857500000000005}]
+```
+
+Example:
+```ruby
+player.stats['curr_p2']['top10'] # return the current solo top10 information
+=> {"label"=>"Top 10", "field"=>"Top10", "category"=>"Tops", "valueInt"=>49, "value"=>"49", "rank"=>9512, "percentile"=>0.2, "displayValue"=>"49"}
 ```
 
 ## Development
