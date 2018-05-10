@@ -1,4 +1,4 @@
-# FortniteApi
+# FortniteApi [![Build Status](https://travis-ci.org/romainr88/fortnite_api.svg?branch=master)](https://travis-ci.org/romainr88/fortnite_api)
 
 fortnite_api allow you to retrieve information from Fortnite in an easy way through fortnitetracker.com API.
 
