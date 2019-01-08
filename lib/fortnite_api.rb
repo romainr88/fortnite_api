@@ -3,6 +3,12 @@ require 'net/http'
 require 'uri'
 require 'json'
 require 'fortnite_api/player'
+require 'fortnite_api/global_solo'
+require 'fortnite_api/global_duo'
+require 'fortnite_api/global_squad'
+require 'fortnite_api/current_solo'
+require 'fortnite_api/current_duo'
+require 'fortnite_api/current_squad'
 
 module FortniteApi
      class Api

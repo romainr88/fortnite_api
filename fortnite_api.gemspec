@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["romainr88"]
   spec.email         = ["romainr88dev@gmail.com"]
 
-  spec.summary       = "Retrieve information from Fortnite with fortnitetracker.com API"
-  spec.description   = "Retrieve information from Fortnite with fortnitetracker.com API"
+  spec.summary       = "Retrieve informations from Fortnite with fortnitetracker.com API"
+  spec.description   = "Retrieve informations from Fortnite with fortnitetracker.com API"
   spec.homepage      = "https://github.com/romainr88/fortnite_api"
   spec.license       = "MIT"
 
