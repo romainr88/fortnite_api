@@ -6,27 +6,27 @@ module FortniteApi
             opts.each { |k,v| instance_variable_set("@#{k.downcase}", v) }
         end
         
-        def global_solo
+        def globalsolo
             GlobalSolo.new(self.stats)
         end
         
-        def global_duo
+        def globalduo
             GlobalDuo.new(self.stats)
         end
         
-        def global_squad
+        def globalsquad
             GlobalSquad.new(self.stats)
         end
         
-        def current_solo
+        def currentsolo
             CurrentSolo.new(self.stats)
         end
         
-        def current_duo
+        def currentduo
             CurrentDuo.new(self.stats)
         end
         
-        def current_squad
+        def currentsquad
             CurrentSquad.new(self.stats)
         end
     end
