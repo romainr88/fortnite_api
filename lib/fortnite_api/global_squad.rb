@@ -6,47 +6,47 @@ module FortniteApi
             @values = hash
         end
      
-        def squad_custom
+        def custom
             self.values['p9']
         end
         
-        def squad_trnrating
+        def trnrating
             self.values['p9']['trnRating']
         end
         
-        def squad_score
+        def score
             self.values['p9']['score']
         end
 
-        def squad_scorepermatch
+        def scorepermatch
             self.values['p9']['scorePerMatch']
         end        
         
-        def squad_top1
+        def top1
             self.values['p9']['top1']
         end
         
-        def squad_top9
+        def top9
             self.values['p9']['top9']
         end
         
-        def squad_top95
+        def top95
             self.values['p9']['top95']
         end
         
-        def squad_winratio
+        def winratio
             self.values['p9']['winRatio']
         end        
         
-        def squad_kills
+        def kills
             self.values['p9']['kills']
         end
         
-        def squad_kd
+        def kd
             self.values['p9']['kd']
         end
         
-        def squad_kpg
+        def kpg
             self.values['p9']['kpg']
         end
     end

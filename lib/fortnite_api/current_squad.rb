@@ -1,5 +1,5 @@
 module FortniteApi
-    class GlobalSolo
+    class CurrentSquad
         attr_reader :values
             
         def initialize(hash={})
@@ -7,47 +7,47 @@ module FortniteApi
         end
         
         def custom
-            self.values['p2']
+            self.values['curr_p9']
         end
         
         def trnrating
-            self.values['p2']['trnRating']
+            self.values['curr_p9']['trnRating']
         end
         
         def score
-            self.values['p2']['score']
+            self.values['curr_p9']['score']
         end
 
         def scorepermatch
-            self.values['p2']['scorePerMatch']
+            self.values['curr_p9']['scorePerMatch']
         end        
         
         def top1
-            self.values['p2']['top1']
+            self.values['curr_p9']['top1']
         end
         
         def top10
-            self.values['p2']['top10']
+            self.values['curr_p9']['top10']
         end
         
-        def top25
-            self.values['p2']['top25']
+        def tocurr_p95
+            self.values['curr_p9']['tocurr_p95']
         end
         
         def winratio
-            self.values['p2']['winRatio']
+            self.values['curr_p9']['winRatio']
         end        
         
         def kills
-            self.values['p2']['kills']
+            self.values['curr_p9']['kills']
         end
         
         def kd
-            self.values['p2']['kd']
+            self.values['curr_p9']['kd']
         end
         
         def kpg
-            self.values['p2']['kpg']
+            self.values['curr_p9']['kpg']
         end
     end
 end

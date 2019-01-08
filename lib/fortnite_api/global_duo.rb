@@ -6,47 +6,47 @@ module FortniteApi
             @values = hash
         end
         
-        def duo_custom
+        def custom
             self.values['p10']
         end
         
-        def duo_trnrating
+        def trnrating
             self.values['p10']['trnRating']
         end
         
-        def duo_score
+        def score
             self.values['p10']['score']
         end
 
-        def duo_scorepermatch
+        def scorepermatch
             self.values['p10']['scorePerMatch']
         end        
         
-        def duo_top1
+        def top1
             self.values['p10']['top1']
         end
         
-        def duo_top10
+        def top10
             self.values['p10']['top10']
         end
         
-        def duo_top105
+        def top105
             self.values['p10']['top105']
         end
         
-        def duo_winratio
+        def winratio
             self.values['p10']['winRatio']
         end        
         
-        def duo_kills
+        def kills
             self.values['p10']['kills']
         end
         
-        def duo_kd
+        def kd
             self.values['p10']['kd']
         end
         
-        def duo_kpg
+        def kpg
             self.values['p10']['kpg']
         end        
     end
