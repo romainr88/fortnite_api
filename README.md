@@ -1,6 +1,6 @@
 # FortniteApi [![Build Status](https://travis-ci.org/romainr88/fortnite_api.svg?branch=master)](https://travis-ci.org/romainr88/fortnite_api)
 
-fortnite_api allow you to retrieve information from Fortnite in an easy way through fortnitetracker.com API.
+fortnite_api allow you to retrieve informations from Fortnite in an easy way through fortnitetracker.com API.
 
 ## Installation
 
@@ -25,12 +25,12 @@ Initialize the API with your fortnitetracker.com API key's:
 fortnite = FortniteApi::Api.new('Enter your API Key here')
 ```
 
-Enter the player's profile and the platform which you want to retrieve the information (for the platform you have the choice between 'pc' for PC, 'xbl' for Xbox and 'psn' for Playstation):
+Enter the player's profile and the platform which you want to retrieve the informations (for the platform you have the choice between 'pc' for PC, 'xbl' for Xbox and 'psn' for Playstation):
 ```ruby
 player = fortnite.get_json('pc','Ninja')
 ```
 
-Now you have a player object with the following information:
+Now you have a player object with the following informations:
 
 **Return the username:**
 ```ruby
@@ -64,7 +64,7 @@ player.recentmatches # return the recent matches as an array
 
 Example:
 ```ruby
-player.stats['curr_p2']['top10'] # return the current solo top10 information
+player.stats['curr_p2']['top10'] # return the current solo top10 informations
 => {"label"=>"Top 10", "field"=>"Top10", "category"=>"Tops", "valueInt"=>49, "value"=>"49", "rank"=>9512, "percentile"=>0.2, "displayValue"=>"49"}
 ```
 
