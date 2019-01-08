@@ -3,7 +3,7 @@ require 'net/http'
 require 'uri'
 require 'json'
 require 'fortnite_api/player'
-require 'fortnite_api/global'
+require 'fortnite_api/global_solo'
 
 module FortniteApi
      class Api
