@@ -30,8 +30,8 @@ module FortniteApi
             self.values['curr_p9']['top10']
         end
         
-        def tocurr_p95
-            self.values['curr_p9']['tocurr_p95']
+        def top25
+            self.values['curr_p9']['top25']
         end
         
         def winratio
