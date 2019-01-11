@@ -44,9 +44,9 @@ player.platformnamelong # return the platform as a string
 => "PC"
 ```
 
-**Return global and current seson stats (solo, duo and squad stats):**
+**Return global and current season stats (solo, duo and squad stats):**
 
-For returning stats you have the choice between (globalsolo, globalduo, globalsquad, currentsolo, currentduo and currentsquad) and after you can get the following informations (trnrating, score, scorepermatch, top1, top10, top25, winratio, kills, kd, kpg).
+For return stats you have the choice between ('globalsolo', 'globalduo', 'globalsquad', 'currentsolo', 'currentduo' and 'currentsquad') and after you can get the following informations ('trnrating', 'score', 'scorepermatch', 'top1', 'top10', 'top25', 'winratio', 'kills', 'kd' and 'kpg').
 ```ruby
 player.globalsolo.top1 # return top 1 global solo information as a hash
  => {"label"=>"Wins", "field"=>"Top1", "category"=>"Tops", "valueInt"=>1843, "value"=>"1843", "percentile"=>0.1, "displayValue"=>"1,843"}
